@@ -1,0 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Thành tựu </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="12a8f238-6219-803a-a418-f283d5a65a2b" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="images_(2).png"/></div><h1 class="page-title">Thành tựu </h1><p class="page-description"></p></header><div class="page-body"><hr id="12a8f238-6219-8038-ac5f-c0469915359f"/><div id="12a8f238-6219-80c3-8f9a-d68ed83daf63" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><img src="https://www.notion.so/icons/alien-pixel_gray.svg" style="width:14px;height:14px"/></span>icon</th><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesTitle"><path d="M0.637695 13.1914C1.0957 13.1914 1.32812 13 1.47852 12.5215L2.24414 10.3887H6.14746L6.90625 12.5215C7.05664 13 7.2959 13.1914 7.74707 13.1914C8.22559 13.1914 8.5332 12.9043 8.5332 12.4531C8.5332 12.2891 8.50586 12.1523 8.44434 11.9678L5.41602 3.79199C5.2041 3.21777 4.82129 2.9375 4.19922 2.9375C3.60449 2.9375 3.21484 3.21777 3.0166 3.78516L-0.0322266 12.002C-0.09375 12.1797 -0.121094 12.3232 -0.121094 12.4668C-0.121094 12.918 0.166016 13.1914 0.637695 13.1914ZM2.63379 9.12402L4.17871 4.68066H4.21973L5.76465 9.12402H2.63379ZM12.2793 13.2324C13.3115 13.2324 14.2891 12.6787 14.7129 11.8037H14.7402V12.5762C14.7471 12.9863 15.0273 13.2393 15.4238 13.2393C15.834 13.2393 16.1143 12.9795 16.1143 12.5215V8.00977C16.1143 6.49902 14.9658 5.52148 13.1543 5.52148C11.7666 5.52148 10.6592 6.08887 10.2695 6.99121C10.1943 7.15527 10.1533 7.3125 10.1533 7.46289C10.1533 7.81152 10.4062 8.04395 10.7686 8.04395C11.0215 8.04395 11.2129 7.94824 11.3496 7.73633C11.7529 6.99121 12.2861 6.65625 13.1064 6.65625C14.0977 6.65625 14.6992 7.20996 14.6992 8.1123V8.67285L12.5664 8.7959C10.7686 8.8916 9.77734 9.69824 9.77734 11.0107C9.77734 12.3369 10.8096 13.2324 12.2793 13.2324ZM12.6621 12.1387C11.8008 12.1387 11.2129 11.667 11.2129 10.9561C11.2129 10.2725 11.7598 9.82129 12.7578 9.75977L14.6992 9.62988V10.3203C14.6992 11.3457 13.7969 12.1387 12.6621 12.1387Z"></path></svg></span>name </th><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesText"><path d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z"></path></svg></span>cách đạt được</th></tr></thead><tbody><tr id="65d0f506-bded-4df4-bb01-095bd7173909"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Timber!!.png"><img style="width:20px;max-height:24px" src="Achievement_Timber!!.png" alt="Achievement_Timber!!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Timber-65d0f506bded4df4bb01095bd7173909?pvs=21">Timber!!</a></td><td class="cell-dTFC">Chặt đổ cây đầu tiên</td></tr><tr id="5f0c93c1-a850-488b-9ada-19ee51e8d354"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_No_Hobo.png"><img style="width:20px;max-height:24px" src="Achievement_No_Hobo.png" alt="Achievement_No_Hobo.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/No-Hobo-5f0c93c1a850488b9ada19ee51e8d354?pvs=21">No Hobo</a></td><td class="cell-dTFC">Xây ngôi nhà đầu tiên phù hợp để NPC đầu tiên của thị trấn, như người hướng dẫn chuyển đến </td></tr><tr id="bb8a69f8-17e5-4ebf-a6e7-69e31d3d8860"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Stop!_Hammer_Time!.png"><img style="width:20px;max-height:24px" src="Achievement_Stop!_Hammer_Time!.png" alt="Achievement_Stop!_Hammer_Time!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Stop-Hammer-Time-bb8a69f817e54ebfa6e769e31d3d8860?pvs=21">Stop! Hammer Time!</a></td><td class="cell-dTFC">Nhận được chiếc búa đầu tiên của bạn thông qua chế tạo hoặc cách khác</td></tr><tr id="12a8f238-6219-80db-8321-eec4a99632a5"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Ooo!_Shiny!.png"><img style="width:20px;max-height:24px" src="Achievement_Ooo!_Shiny!.png" alt="Achievement_Ooo!_Shiny!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Ooo-Shiny-12a8f238621980db8321eec4a99632a5?pvs=21">Ooo! Shiny! </a></td><td class="cell-dTFC">Khai thác cục quặng đầu tiên của bạn bằng cuốc chim</td></tr><tr id="12a8f238-6219-8051-832b-c69a5c26f784"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Heart_Breaker.png"><img style="width:20px;max-height:24px" src="Achievement_Heart_Breaker.png" alt="Achievement_Heart_Breaker.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Heart-Breaker-12a8f23862198051832bc69a5c26f784?pvs=21">Heart Breaker</a></td><td class="cell-dTFC">Khám phá và đập vỡ viên pha lê trái tim đầu tiên của bạn dưới lòng đất</td></tr><tr id="12a8f238-6219-80ff-8fc1-fed66e7f108b"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Heavy_Metal.png"><img style="width:20px;max-height:24px" src="Achievement_Heavy_Metal.png" alt="Achievement_Heavy_Metal.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Heavy-Metal-12a8f238621980ff8fc1fed66e7f108b?pvs=21">Heavy Metal</a></td><td class="cell-dTFC">Chế tạo một cái đe làm bằng sắt hoặc chì</td></tr><tr id="12a8f238-6219-80e2-a75b-debcb354f8b4"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_I_Am_Loot!.png"><img style="width:20px;max-height:24px" src="Achievement_I_Am_Loot!.png" alt="Achievement_I_Am_Loot!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/I-Am-Loot-12a8f238621980e2a75bdebcb354f8b4?pvs=21">I Am Loot!</a></td><td class="cell-dTFC">Mở rương dưới lòng đất </td></tr><tr id="12a8f238-6219-8014-b306-dac60d340167"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Star_Power.png"><img style="width:20px;max-height:24px" src="Achievement_Star_Power.png" alt="Achievement_Star_Power.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Star-Power-12a8f23862198014b306dac60d340167?pvs=21">Star Power</a></td><td class="cell-dTFC">Chế tạo một tinh thể mana từ những ngôi sao sa ngã và sử dụng nó</td></tr><tr id="12a8f238-6219-806c-a966-ea4e1f6f3937"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Hold_on_Tight!.png"><img style="width:20px;max-height:24px" src="Achievement_Hold_on_Tight!.png" alt="Achievement_Hold_on_Tight!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Hold-on-Tight-12a8f2386219806ca966ea4e1f6f3937?pvs=21">Hold on Tight!</a></td><td class="cell-dTFC">Trang bị móc và sử dụng nó </td></tr><tr id="12a8f238-6219-80ce-ae4b-e71b9e39d5ec"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Eye_on_You.png"><img style="width:20px;max-height:24px" src="Achievement_Eye_on_You.png" alt="Achievement_Eye_on_You.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Eye-on-You-12a8f238621980ceae4be71b9e39d5ec?pvs=21">Eye on You</a></td><td class="cell-dTFC">Đánh bại Eye of Cthulhu</td></tr><tr id="12a8f238-6219-8071-8851-e83a0c349a3c"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Smashing_Poppet!.png"><img style="width:20px;max-height:24px" src="Achievement_Smashing_Poppet!.png" alt="Achievement_Smashing,_Poppet!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Smashing-Poppet-12a8f238621980718851e83a0c349a3c?pvs=21">Smashing, Poppet!</a></td><td class="cell-dTFC">Sử dụng thuốc nổ hoặc sử dụng trusty hammer của bạn, đập vỡ Quả cầu bóng tối hoặc Trái tim đỏ thẫm ở những nơi xấu xa trên thế giới của bạn</td></tr><tr id="12a8f238-6219-80ce-8091-fdf042615a7c"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Worm_Fodder.png"><img style="width:20px;max-height:24px" src="Achievement_Worm_Fodder.png" alt="Achievement_Worm_Fodder.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Worm-Fodder-12a8f238621980ce8091fdf042615a7c?pvs=21">Worm Fodder</a></td><td class="cell-dTFC">Đánh bại Eater of Worlds</td></tr><tr id="12a8f238-6219-802b-8217-f27191f303b9"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Mastermind.png"><img style="width:20px;max-height:24px" src="Achievement_Mastermind.png" alt="Achievement_Mastermind.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Mastermind-12a8f2386219802b8217f27191f303b9?pvs=21">Mastermind</a></td><td class="cell-dTFC">Đánh bại Brain of Cthulhu</td></tr><tr id="12a8f238-6219-8010-91f2-d357f223d8df"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Wheres_My_Honey.png"><img style="width:20px;max-height:24px" src="Achievement_Wheres_My_Honey.png" alt="Achievement_Where&#x27;s_My_Honey.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Where-s-My-Honey-12a8f2386219801091f2d357f223d8df?pvs=21">Where&#x27;s My Honey?</a></td><td class="cell-dTFC">Khám phá một tổ ong lớn sâu trong rừng rậm</td></tr><tr id="12a8f238-6219-80c5-8450-d69b94c1659f"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Sting_Operation.png"><img style="width:20px;max-height:24px" src="Achievement_Sting_Operation.png" alt="Achievement_Sting_Operation.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Sting-Operation-12a8f238621980c58450d69b94c1659f?pvs=21">Sting Operation</a></td><td class="cell-dTFC">Đánh bại Nữ hoàng ong</td></tr><tr id="12a8f238-6219-80f4-abef-e21e81a09b77"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Boned.png"><img style="width:20px;max-height:24px" src="Achievement_Boned.png" alt="Achievement_Boned.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Boned-12a8f238621980f4abefe21e81a09b77?pvs=21">Boned</a></td><td class="cell-dTFC">Đánh bại Skeletron, người bảo vệ bị nguyền rủa của ngục tối</td></tr><tr id="12a8f238-6219-80c2-b0ba-ec9cd17ab5be"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Dungeon_Heist.png"><img style="width:20px;max-height:24px" src="Achievement_Dungeon_Heist.png" alt="Achievement_Dungeon_Heist.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Dungeon-Heist-12a8f238621980c2b0baec9cd17ab5be?pvs=21">Dungeon Heist</a></td><td class="cell-dTFC">Trộm chìa khóa từ những cư dân xác sống trong ngục tối và mở khóa một trong những chiếc rương vàng quý giá của họ</td></tr><tr id="12a8f238-6219-806f-b160-e8e858e2b8cf"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Its_Getting_Hot_in_Here.png"><img style="width:20px;max-height:24px" src="Achievement_Its_Getting_Hot_in_Here.png" alt="Achievement_It&#x27;s_Getting_Hot_in_Here.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/It-s-Getting-Hot-in-Here-12a8f2386219806fb160e8e858e2b8cf?pvs=21">It&#x27;s Getting Hot in Here</a></td><td class="cell-dTFC">Đào sâu xuống lòng đất cho tới khi tìm thấy địa ngục </td></tr><tr id="12a8f238-6219-80ee-84ad-e070e7e2d2c0"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Miner_for_Fire.png"><img style="width:20px;max-height:24px" src="Achievement_Miner_for_Fire.png" alt="Achievement_Miner_for_Fire.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Miner-for-Fire-12a8f238621980ee84ade070e7e2d2c0?pvs=21">Miner for Fire</a></td><td class="cell-dTFC">Chế tạo một chiếc cuốc nóng chảy bằng đá địa ngục </td></tr><tr id="12a8f238-6219-80b4-8873-c593ec9fcce4"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Still_Hungry.png"><img style="width:20px;max-height:24px" src="Achievement_Still_Hungry.png" alt="Achievement_Still_Hungry.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/12a8f238621980b48873c593ec9fcce4?pvs=21">Untitled</a></td><td class="cell-dTFC">Đánh bại Bức tường Thịt, chủ nhân địa ngục </td></tr><tr id="12a8f238-6219-8072-9729-d2510a9aa96c"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Its_Hard!.png"><img style="width:20px;max-height:24px" src="Achievement_Its_Hard!.png" alt="Achievement_It&#x27;s_Hard!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/It-s-Hard-12a8f238621980729729d2510a9aa96c?pvs=21">It&#x27;s Hard!</a></td><td class="cell-dTFC">Giải phóng những linh hồn cổ xưa của ánh sáng và bóng tối trên khắp thế giới bằng cách sử dụng Pwnhammer đập vỡ Demon / Crimson Altar</td></tr><tr id="12a8f238-6219-805f-8f34-f839cdc24271"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Begone_Evil!.png"><img style="width:20px;max-height:24px" src="Achievement_Begone_Evil!.png" alt="Achievement_Begone,_Evil!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Begone-Evil-12a8f2386219805f8f34f839cdc24271?pvs=21">Begone, Evil!</a></td><td class="cell-dTFC">Sử dụng Pwnhammer đập vỡ Demon / Crimson Altar</td></tr><tr id="12a8f238-6219-80a3-9696-ed2aa542f8e7"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Extra_Shiny!.png"><img style="width:20px;max-height:24px" src="Achievement_Extra_Shiny!.png" alt="Achievement_Extra_Shiny!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Extra-Shiny-12a8f238621980a39696ed2aa542f8e7?pvs=21">Extra Shiny!</a></td><td class="cell-dTFC">Khai thác một loại quặng mới được xuất hiện trong thế giới sau khi sang hardmode</td></tr><tr id="12a8f238-6219-8038-a772-e4e5796e16a0"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Head_in_the_Clouds.png"><img style="width:20px;max-height:24px" src="Achievement_Head_in_the_Clouds.png" alt="Achievement_Head_in_the_Clouds.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Head-in-the-Clouds-12a8f23862198038a772e4e5796e16a0?pvs=21">Head in the Clouds</a></td><td class="cell-dTFC">Sử dụng một đôi cánh </td></tr><tr id="12a8f238-6219-806f-a5bf-cdccdb86507c"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Like_a_Boss.png"><img style="width:20px;max-height:24px" src="Achievement_Like_a_Boss.png" alt="Achievement_Like_a_Boss.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Like-a-Boss-12a8f2386219806fa5bfcdccdb86507c?pvs=21">Like a Boss</a></td><td class="cell-dTFC">Nhận vật phẩm triệu hồi trùm</td></tr><tr id="12a8f238-6219-8045-9abf-fa49d6584145"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Buckets_of_Bolts.png"><img style="width:20px;max-height:24px" src="Achievement_Buckets_of_Bolts.png" alt="Achievement_Buckets_of_Bolts.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Buckets-of-Bolts-12a8f238621980459abffa49d6584145?pvs=21">Buckets of Bolts</a></td><td class="cell-dTFC">“Đánh bại ba mối đe dọa cơ khí về đêm: Twins, Destroyer và Skeletron Prime.”</td></tr><tr id="12a8f238-6219-80fe-a339-ed3f8c4c64cf"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Drax_Attax.png"><img style="width:20px;max-height:24px" src="Achievement_Drax_Attax.png" alt="Achievement_Drax_Attax.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Drax-Attax-12a8f238621980fea339ed3f8c4c64cf?pvs=21">Drax Attax</a></td><td class="cell-dTFC">Chế tạo một chiếc rìu Drax hoặc Pickaxe bằng cách sử dụng các thanh thánh và linh hồn của ba tên trùm cơ khí.</td></tr><tr id="12a8f238-6219-8023-aa9c-c8cf7133716a"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Photosynthesis.png"><img style="width:20px;max-height:24px" src="Achievement_Photosynthesis.png" alt="Achievement_Photosynthesis.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Photosynthesis-12a8f23862198023aa9cc8cf7133716a?pvs=21">Photosynthesis</a></td><td class="cell-dTFC">Khai thác diệp lục, một loại quặng hữu cơ được tìm thấy sâu trong thảm thực vật dày đặc nhất</td></tr><tr id="12a8f238-6219-8076-baa1-edf5c4ac55c7"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Get_a_Life.png"><img style="width:20px;max-height:24px" src="Achievement_Get_a_Life.png" alt="Achievement_Get_a_Life.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Get-a-Life-12a8f23862198076baa1edf5c4ac55c7?pvs=21">Get a Life</a></td><td class="cell-dTFC">Tiêu thụ một loại trái cây sống, mọc trong đám cỏ dày của rừng rậm ngầm</td></tr><tr id="12a8f238-6219-8028-ac0e-e1abda099e31"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_The_Great_Southern_Plantkill.png"><img style="width:20px;max-height:24px" src="Achievement_The_Great_Southern_Plantkill.png" alt="Achievement_The_Great_Southern_Plantkill.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/The-Great-Southern-Plantkill-12a8f23862198028ac0ee1abda099e31?pvs=21">The Great Southern Plantkill</a></td><td class="cell-dTFC">Đánh bại Plantera</td></tr><tr id="12a8f238-6219-8052-9b87-d56f79d53ab5"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Temple_Raider.png"><img style="width:20px;max-height:24px" src="Achievement_Temple_Raider.png" alt="Achievement_Temple_Raider.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Temple-Raider-12a8f238621980529b87d56f79d53ab5?pvs=21">Temple Raider</a></td><td class="cell-dTFC">Phá vỡ những bức tường kiên cố của ngôi đền trong rừng</td></tr><tr id="12a8f238-6219-80bc-bcdf-dd32dbb67a07"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Lihzahrdian_Idol.png"><img style="width:20px;max-height:24px" src="Achievement_Lihzahrdian_Idol.png" alt="Achievement_Lihzahrdian_Idol.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Lihzahrdian-Idol-12a8f238621980bcbcdfdd32dbb67a07?pvs=21">Lihzahrdian Idol</a></td><td class="cell-dTFC">Đánh bại Golem, thần tượng nghi lễ mặt đá của bộ tộc lihzahrd</td></tr><tr id="12a8f238-6219-8067-b0ad-f78d9affe2bc"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Robbing_the_Grave.png"><img style="width:20px;max-height:24px" src="Achievement_Robbing_the_Grave.png" alt="Achievement_Robbing_the_Grave.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Robbing-the-Grave-12a8f23862198067b0adf78d9affe2bc?pvs=21">Robbing the Grave</a></td><td class="cell-dTFC">Nhận được một vật phẩm hiếm từ kẻ thù trong Ngục tối hậu Plantera</td></tr><tr id="12a8f238-6219-8069-9a83-d982ba3b025e"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Big_Booty.png"><img style="width:20px;max-height:24px" src="Achievement_Big_Booty.png" alt="Achievement_Big_Booty.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Big-Booty-12a8f238621980699a83d982ba3b025e?pvs=21">Big Booty</a></td><td class="cell-dTFC">Mở Rương Biome đầu tiên của bạn</td></tr><tr id="12a8f238-6219-80de-8fa9-ffe6ea33e733"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Fish_Out_of_Water.png"><img style="width:20px;max-height:24px" src="Achievement_Fish_Out_of_Water.png" alt="Achievement_Fish_Out_of_Water.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Fish-Out-of-Water-12a8f238621980de8fa9ffe6ea33e733?pvs=21">Fish Out of Water</a></td><td class="cell-dTFC">Đánh bại Duke Fishron</td></tr><tr id="12a8f238-6219-80e0-9c6b-e6fd104b8815"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Obsessive_Devotion.png"><img style="width:20px;max-height:24px" src="Achievement_Obsessive_Devotion.png" alt="Achievement_Obsessive_Devotion.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Obsessive-Devotion-12a8f238621980e09c6be6fd104b8815?pvs=21">Obsessive Devotion</a></td><td class="cell-dTFC">Đánh bại Lunatic Cultist</td></tr><tr id="12a8f238-6219-802e-8c68-d1578679cea7"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Star_Destroyer.png"><img style="width:20px;max-height:24px" src="Achievement_Star_Destroyer.png" alt="Achievement_Star_Destroyer.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Star-Destroyer-12a8f2386219802e8c68d1578679cea7?pvs=21">Star Destroyer</a></td><td class="cell-dTFC">Đánh bại cả bốn Trụ Cột Thiên Thể</td></tr><tr id="12a8f238-6219-8011-90d0-f809c8bf2c71"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Champion_of_Terraria.png"><img style="width:20px;max-height:24px" src="Achievement_Champion_of_Terraria.png" alt="Achievement_Champion_of_Terraria.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Champion-of-Terraria-12a8f2386219801190d0f809c8bf2c71?pvs=21">Champion of Terraria</a></td><td class="cell-dTFC">Đánh bại Chúa tể Mặt trăng lần đầu tiên</td></tr><tr id="12a8f238-6219-80b4-8816-d8347deb9092"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Bloodbath.png"><img style="width:20px;max-height:24px" src="Achievement_Bloodbath.png" alt="Achievement_Bloodbath.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Bloodbath-12a8f238621980b48816d8347deb9092?pvs=21">Bloodbath</a></td><td class="cell-dTFC">Sống sót qua Trăng máu đầu tiên của bạn</td></tr><tr id="12a8f238-6219-806d-b970-c12934cd03a3"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Slippery_Shinobi.png"><img style="width:20px;max-height:24px" src="Achievement_Slippery_Shinobi.png" alt="Achievement_Slippery_Shinobi.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Slippery-Shinobi-12a8f2386219806db970c12934cd03a3?pvs=21">Slippery Shinobi</a></td><td class="cell-dTFC">Đánh bại King Slime lần đầu tiên</td></tr><tr id="12a8f238-6219-802b-b3f4-fd7a9dff2aa2"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Goblin_Punter.png"><img style="width:20px;max-height:24px" src="Achievement_Goblin_Punter.png" alt="Achievement_Goblin_Punter.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Goblin-Punter-12a8f2386219802bb3f4fd7a9dff2aa2?pvs=21">Goblin Punter</a></td><td class="cell-dTFC">Đánh bại đội quân Goblin lần đầu tiên</td></tr><tr id="12a8f238-6219-80bd-8183-d05aa48ad184"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Walk_the_Plank.png"><img style="width:20px;max-height:24px" src="Achievement_Walk_the_Plank.png" alt="Achievement_Walk_the_Plank.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Walk-the-Plank-12a8f238621980bd8183d05aa48ad184?pvs=21">Walk the Plank</a></td><td class="cell-dTFC">Đánh bại cuộc xâm lược của cướp biển lần đầu tiên</td></tr><tr id="12a8f238-6219-80f5-8ee4-ca9f4908d2e6"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Kill_the_Sun.png"><img style="width:20px;max-height:24px" src="Achievement_Kill_the_Sun.png" alt="Achievement_Kill_the_Sun.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Kill-the-Sun-12a8f238621980f58ee4ca9f4908d2e6?pvs=21">Kill the Sun</a></td><td class="cell-dTFC">Sống sót sau nhật thực</td></tr><tr id="12a8f238-6219-8009-ae9e-c8588447307e"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Do_You_Want_to_Slay_a_Snowman.png"><img style="width:20px;max-height:24px" src="Achievement_Do_You_Want_to_Slay_a_Snowman.png" alt="Achievement_Do_You_Want_to_Slay_a_Snowman.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Do-You-Want-to-Slay-a-Snowman-12a8f23862198009ae9ec8588447307e?pvs=21">Do You Want to Slay a Snowman?</a></td><td class="cell-dTFC">Đánh bại quân đoàn băng giá</td></tr><tr id="12a8f238-6219-8059-ba50-d12861b58203"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Tin-Foil_Hatter.png"><img style="width:20px;max-height:24px" src="Achievement_Tin-Foil_Hatter.png" alt="Achievement_Tin-Foil_Hatter.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Tin-Foil-Hatter-12a8f23862198059ba50d12861b58203?pvs=21">Tin-Foil Hatter</a></td><td class="cell-dTFC">Đánh bại cuộc xâm lược của người sao Hỏa</td></tr><tr id="12a8f238-6219-8095-8391-f41dfe17508d"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Baleful_Harvest.png"><img style="width:20px;max-height:24px" src="Achievement_Baleful_Harvest.png" alt="Achievement_Baleful_Harvest.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Baleful-Harvest-12a8f238621980958391f41dfe17508d?pvs=21">Baleful Harvest</a></td><td class="cell-dTFC">Đạt đến đợt sóng thứ 15 của Trăng Bí Ngô</td></tr><tr id="12a8f238-6219-805e-9ae0-c61c546158f4"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Ice_Scream.png"><img style="width:20px;max-height:24px" src="Achievement_Ice_Scream.png" alt="Achievement_Ice_Scream.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Ice-Scream-12a8f2386219805e9ae0c61c546158f4?pvs=21">Ice Scream</a></td><td class="cell-dTFC">Đạt đến đợt sóng thứ 15 của Trăng băng giá</td></tr><tr id="12a8f238-6219-80c4-aeed-e4b08c388994"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Sticky_Situation.png"><img style="width:20px;max-height:24px" src="Achievement_Sticky_Situation.png" alt="Achievement_Sticky_Situation.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Sticky-Situation-12a8f238621980c4aeede4b08c388994?pvs=21">Sticky Situation</a></td><td class="cell-dTFC">Sống sót qua cơn mưa chất nhờn</td></tr><tr id="12a8f238-6219-8012-af90-d090d7d005d3"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Real_Estate_Agent.png"><img style="width:20px;max-height:24px" src="Achievement_Real_Estate_Agent.png" alt="Achievement_Real_Estate_Agent.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Real-Estate-Agent-12a8f23862198012af90d090d7d005d3?pvs=21">Real Estate Agent</a></td><td class="cell-dTFC">Tất cả NPC trong thị trấn đều có mặt trong thế giới của bạn</td></tr><tr id="12a8f238-6219-8071-9473-c861cd05a542"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Not_the_Bees!.png"><img style="width:20px;max-height:24px" src="Achievement_Not_the_Bees!.png" alt="Achievement_Not_the_Bees!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Not-the-Bees-12a8f238621980719473c861cd05a542?pvs=21">Not the Bees!</a></td><td class="cell-dTFC">Bắn Bee Gun khi được trang bị đầy đủ bộ Bee Armor.</td></tr><tr id="12a8f238-6219-80bc-a82a-e6d2535dfcd3"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Jeepers_Creepers.png"><img style="width:20px;max-height:24px" src="Achievement_Jeepers_Creepers.png" alt="Achievement_Jeepers_Creepers.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Jeepers-Creepers-12a8f238621980bca82ae6d2535dfcd3?pvs=21">Jeepers Creepers</a></td><td class="cell-dTFC">Bước vào Hang Nhện ngầm đầu tiên của bạn.</td></tr><tr id="12a8f238-6219-805d-abfe-ebf77b065301"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Funkytown.png"><img style="width:20px;max-height:24px" src="Achievement_Funkytown.png" alt="Achievement_Funkytown.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Funkytown-12a8f2386219805dabfeebf77b065301?pvs=21">Funkytown</a></td><td class="cell-dTFC">Gặp phải quần xã nấm phát sáng trên mặt đất.</td></tr><tr id="12a8f238-6219-8032-8d04-e24832d456ab"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Into_Orbit.png"><img style="width:20px;max-height:24px" src="Achievement_Into_Orbit.png" alt="Achievement_Into_Orbit.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Into-Orbit-12a8f238621980328d04e24832d456ab?pvs=21">Into Orbit</a></td><td class="cell-dTFC">Không gian đạt tới</td></tr><tr id="12a8f238-6219-80ae-a3b6-eb5037bca190"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Rock_Bottom_(PC).png"><img style="width:20px;max-height:24px" src="Achievement_Rock_Bottom_(PC).png" alt="Achievement_Rock_Bottom_(PC).png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Rock-Bottom-12a8f238621980aea3b6eb5037bca190?pvs=21">Rock Bottom</a></td><td class="cell-dTFC">Đến tận cùng của Địa ngục</td></tr><tr id="12a8f238-6219-8028-9cb1-dccfd81668cb"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Mecha_Mayhem.png"><img style="width:20px;max-height:24px" src="Achievement_Mecha_Mayhem.png" alt="Achievement_Mecha_Mayhem.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Mecha-Mayhem-12a8f238621980289cb1dccfd81668cb?pvs=21">Mecha Mayhem</a></td><td class="cell-dTFC">Đánh bại cả ba Trùm Cơ Khí cùng lúc trong một trận chiến</td></tr><tr id="12a8f238-6219-8071-a2c7-c2b7c19c8d0c"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Gelatin_World_Tour.png"><img style="width:20px;max-height:24px" src="Achievement_Gelatin_World_Tour.png" alt="Achievement_Gelatin_World_Tour.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Gelatin-World-Tour-12a8f23862198071a2c7c2b7c19c8d0c?pvs=21">Gelatin World Tour</a></td><td class="cell-dTFC">Đánh bại ít nhất một trong mỗi loại chất nhờn.</td></tr><tr id="12a8f238-6219-8031-bd97-fa39cb07e4ff"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Fashion_Statement.png"><img style="width:20px;max-height:24px" src="Achievement_Fashion_Statement.png" alt="Achievement_Fashion_Statement.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Fashion-Statement-12a8f23862198031bd97fa39cb07e4ff?pvs=21">Fashion Statement</a></td><td class="cell-dTFC">Trang bị áo giáp hoặc quần áo phù phiếm vào cả ba ô xã hội.</td></tr><tr id="12a8f238-6219-8033-9999-c16cfe280b17"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Vehicular_Manslaughter.png"><img style="width:20px;max-height:24px" src="Achievement_Vehicular_Manslaughter.png" alt="Achievement_Vehicular_Manslaughter.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Vehicular-Manslaughter-12a8f238621980339999c16cfe280b17?pvs=21">Vehicular Manslaughter</a></td><td class="cell-dTFC">Giết kẻ thù bằng cách cán qua chúng bằng xe mỏ.</td></tr><tr id="12a8f238-6219-807d-a972-c9f88b5db586"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Bulldozer.png"><img style="width:20px;max-height:24px" src="Achievement_Bulldozer.png" alt="Achievement_Bulldozer.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Bulldozer-12a8f2386219807da972c9f88b5db586?pvs=21">Bulldozer</a></td><td class="cell-dTFC">Khai thác tổng cộng 10.000 ô.</td></tr><tr id="12a8f238-6219-80c3-8fcd-cd41f1ba3da4"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_There_are_Some_Who_Call_Him....png"><img style="width:20px;max-height:24px" src="Achievement_There_are_Some_Who_Call_Him....png" alt="Achievement_There_are_Some_Who_Call_Him....png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/There-are-Some-Who-Call-Him-12a8f238621980c38fcdcd41f1ba3da4?pvs=21">There are Some Who Call Him... </a></td><td class="cell-dTFC">Đánh bại Tim</td></tr><tr id="12a8f238-6219-8027-8221-ec1eb1f33ea5"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Deceiver_of_Fools.png"><img style="width:20px;max-height:24px" src="Achievement_Deceiver_of_Fools.png" alt="Achievement_Deceiver_of_Fools.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Deceiver-of-Fools-12a8f238621980278221ec1eb1f33ea5?pvs=21">Deceiver of Fools</a></td><td class="cell-dTFC">Đánh bại một Nymph</td></tr><tr id="12a8f238-6219-80b1-b99f-de5876c9d90c"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Sword_of_the_Hero.png"><img style="width:20px;max-height:24px" src="Achievement_Sword_of_the_Hero.png" alt="Achievement_Sword_of_the_Hero.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Sword-of-the-Hero-12a8f238621980b1b99fde5876c9d90c?pvs=21">Sword of the Hero</a></td><td class="cell-dTFC">Nhận Terra Blade</td></tr><tr id="12a8f238-6219-80a7-9aea-deb76cbb1d6d"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Lucky_Break.png"><img style="width:20px;max-height:24px" src="Achievement_Lucky_Break.png" alt="Achievement_Lucky_Break.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Lucky-Break-12a8f238621980a79aeadeb76cbb1d6d?pvs=21">Lucky Break</a></td><td class="cell-dTFC">Sống sót sau cú ngã khi không còn nhiều sức khỏe</td></tr><tr id="12a8f238-6219-80d7-83f7-c74c0ca010f7"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Throwing_Lines.png"><img style="width:20px;max-height:24px" src="Achievement_Throwing_Lines.png" alt="Achievement_Throwing_Lines.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Throwing-Lines-12a8f238621980d783f7c74c0ca010f7?pvs=21">Throwing Lines</a></td><td class="cell-dTFC">Ném Yoyo lần đầu tiên</td></tr><tr id="12a8f238-6219-8088-9990-d9aa72b03401"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Dye_Hard.png"><img style="width:20px;max-height:24px" src="Achievement_Dye_Hard.png" alt="Achievement_Dye_Hard.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Dye-Hard-12a8f238621980889990d9aa72b03401?pvs=21">Dye Hard</a></td><td class="cell-dTFC">Trang bị thuốc nhuộm vào tất cả các ô thuốc nhuộm</td></tr><tr id="12a8f238-6219-8031-b79b-cd76c2955758"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Sick_Throw.png"><img style="width:20px;max-height:24px" src="Achievement_Sick_Throw.png" alt="Achievement_Sick_Throw.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Sick-Throw-12a8f23862198031b79bcd76c2955758?pvs=21">Sick Throw</a></td><td class="cell-dTFC">Nhận Terrarian</td></tr><tr id="12a8f238-6219-8077-b943-c31e9a4751db"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_The_Frequent_Flyer.png"><img style="width:20px;max-height:24px" src="Achievement_The_Frequent_Flyer.png" alt="Achievement_The_Frequent_Flyer.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/The-Frequent-Flyer-12a8f23862198077b943c31e9a4751db?pvs=21">The Frequent Flyer</a></td><td class="cell-dTFC">Chi tiêu hơn 1 vàng  để được điều trị bởi Y tá</td></tr><tr id="12a8f238-6219-8093-a5a6-f413403481db"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_The_Cavalry.png"><img style="width:20px;max-height:24px" src="Achievement_The_Cavalry.png" alt="Achievement_The_Cavalry.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/The-Cavalry-12a8f23862198093a5a6f413403481db?pvs=21">The Cavalry</a></td><td class="cell-dTFC">Trang bị cho thú cưỡi </td></tr><tr id="12a8f238-6219-8035-8813-d41ed9eb95fd"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Completely_Awesome.png"><img style="width:20px;max-height:24px" src="Achievement_Completely_Awesome.png" alt="Achievement_Completely_Awesome.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Completely-Awesome-12a8f238621980358813d41ed9eb95fd?pvs=21">Completely Awesome</a></td><td class="cell-dTFC">Nhận Minishark</td></tr><tr id="12a8f238-6219-80a8-9bf3-daad53502a94"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Til_Death....png"><img style="width:20px;max-height:24px" src="Achievement_Til_Death....png" alt="Achievement_Til_Death....png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Til-Death-12a8f238621980a89bf3daad53502a94?pvs=21">Til Death...</a></td><td class="cell-dTFC">Đánh bại chú rể </td></tr><tr id="12a8f238-6219-804e-8e2e-e437e29ad1c1"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Archaeologist.png"><img style="width:20px;max-height:24px" src="Achievement_Archaeologist.png" alt="Achievement_Archaeologist.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Archaeologist-12a8f2386219804e8e2ee437e29ad1c1?pvs=21">Archaeologist</a></td><td class="cell-dTFC">Đánh bại Bác sĩ Bones lần đầu tiên</td></tr><tr id="12a8f238-6219-800a-9ab8-fe8edf22958e"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Pretty_in_Pink.png"><img style="width:20px;max-height:24px" src="Achievement_Pretty_in_Pink.png" alt="Achievement_Pretty_in_Pink.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Pretty-in-Pink-12a8f2386219800a9ab8fe8edf22958e?pvs=21">Pretty in Pink</a></td><td class="cell-dTFC">Đánh bại Pinky lần đầu tiên</td></tr><tr id="12a8f238-6219-80f9-bebd-e0a3767e1169"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Rainbows_and_Unicorns.png"><img style="width:20px;max-height:24px" src="Achievement_Rainbows_and_Unicorns.png" alt="Achievement_Rainbows_and_Unicorns.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Rainbows-and-Unicorns-12a8f238621980f9bebde0a3767e1169?pvs=21">Rainbows and Unicorns</a></td><td class="cell-dTFC">Bắn Súng Cầu Vồng khi cưỡi Thú cưỡi Kỳ Lân</td></tr><tr id="12a8f238-6219-8049-8cee-f409602f6638"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_You_and_What_Army.png"><img style="width:20px;max-height:24px" src="Achievement_You_and_What_Army.png" alt="Achievement_You_and_What_Army.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/You-and-What-Army-12a8f238621980498ceef409602f6638?pvs=21">You and What Army?</a></td><td class="cell-dTFC">Có chín minion được triệu hồi cùng một lúc</td></tr><tr id="12a8f238-6219-80be-9597-d9ceb0839b4f"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Prismancer.png"><img style="width:20px;max-height:24px" src="Achievement_Prismancer.png" alt="Achievement_Prismancer.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Prismancer-12a8f238621980be9597d9ceb0839b4f?pvs=21">Prismancer</a></td><td class="cell-dTFC">Nhận được thanh cầu vồng</td></tr><tr id="12a8f238-6219-80a0-9c78-df67f61ba6b5"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_It_Can_Talk.png"><img style="width:20px;max-height:24px" src="Achievement_It_Can_Talk.png" alt="Achievement_It_Can_Talk.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/It-Can-Talk-12a8f238621980a09c78df67f61ba6b5?pvs=21">It Can Talk?!</a></td><td class="cell-dTFC">Có một Truffle di chuyển vào một ngôi nhà được tạo ra trong quần xã nấm phát sáng</td></tr><tr id="12a8f238-6219-80af-8dec-ecbeeb8cbcc7"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Watch_Your_Step!.png"><img style="width:20px;max-height:24px" src="Achievement_Watch_Your_Step!.png" alt="Achievement_Watch_Your_Step!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Watch-Your-Step-12a8f238621980af8dececbeeb8cbcc7?pvs=21">Watch Your Step!</a></td><td class="cell-dTFC">Bị giết bởi một cái bẫy lần đầu tiên</td></tr><tr id="12a8f238-6219-80f9-8ed6-decbde4e0cad"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Marathon_Medalist.png"><img style="width:20px;max-height:24px" src="Achievement_Marathon_Medalist.png" alt="Achievement_Marathon_Medalist.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Marathon-Medalist-12a8f238621980f98ed6decbde4e0cad?pvs=21">Marathon Medalist</a></td><td class="cell-dTFC">Đi bộ tổng cộng 26,2 dặm (69.168 ô)</td></tr><tr id="12a8f238-6219-8049-af0f-f967c7a04087"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Glorious_Golden_Pole.png"><img style="width:20px;max-height:24px" src="Achievement_Glorious_Golden_Pole.png" alt="Achievement_Glorious_Golden_Pole.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Glorious-Golden-Pole-12a8f23862198049af0ff967c7a04087?pvs=21">Glorious Golden Pole</a></td><td class="cell-dTFC">Nhận Cần Câu Vàng từ Người Câu Cá</td></tr><tr id="12a8f238-6219-8028-9bdb-e3b66601efd9"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Servant-in-Training.png"><img style="width:20px;max-height:24px" src="Achievement_Servant-in-Training.png" alt="Achievement_Servant-in-Training.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Servant-in-Training-12a8f238621980289bdbe3b66601efd9?pvs=21">Servant-in-Training</a></td><td class="cell-dTFC">Hoàn thành 1 nhiệm vụ của Angler</td></tr><tr id="12a8f238-6219-802d-a3a3-faeb99992f80"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Good_Little_Slave.png"><img style="width:20px;max-height:24px" src="Achievement_Good_Little_Slave.png" alt="Achievement_Good_Little_Slave.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Good-Little-Slave-12a8f2386219802da3a3faeb99992f80?pvs=21">Good Little Slave</a></td><td class="cell-dTFC">Hoàn thành 10 nhiệm vụ của Angler</td></tr><tr id="12a8f238-6219-8033-a2c9-ecafd57326d5"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Trout_Monkey.png"><img style="width:20px;max-height:24px" src="Achievement_Trout_Monkey.png" alt="Achievement_Trout_Monkey.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Trout-Monkey-12a8f23862198033a2c9ecafd57326d5?pvs=21">Trout Monkey</a></td><td class="cell-dTFC">Hoàn thành 25 nhiệm vụ của Angler</td></tr><tr id="12a8f238-6219-8026-a944-e697ab3bffa4"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Fast_and_Fishious.png"><img style="width:20px;max-height:24px" src="Achievement_Fast_and_Fishious.png" alt="Achievement_Fast_and_Fishious.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Fast-and-Fishious-12a8f23862198026a944e697ab3bffa4?pvs=21">Fast and Fishious</a></td><td class="cell-dTFC">Hoàn thành 50 nhiệm vụ của Angler</td></tr><tr id="12a8f238-6219-80fc-98cf-eba7843b59a8"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Supreme_Helper_Minion!.png"><img style="width:20px;max-height:24px" src="Achievement_Supreme_Helper_Minion!.png" alt="Achievement_Supreme_Helper_Minion!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Supreme-Helper-Minion-12a8f238621980fc98cfeba7843b59a8?pvs=21">Supreme Helper Minion!</a></td><td class="cell-dTFC">Hoàn thành 200 nhiệm vụ của Angler</td></tr><tr id="12a8f238-6219-80b2-9dc5-c0c588e305e4"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Topped_Off.png"><img style="width:20px;max-height:24px" src="Achievement_Topped_Off.png" alt="Achievement_Topped_Off.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Topped-Off-12a8f238621980b29dc5c0c588e305e4?pvs=21">Topped Off</a></td><td class="cell-dTFC">Đạt được sức khỏe và mana tối đa</td></tr><tr id="12a8f238-6219-8035-8ee4-d80fb5889cef"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Slayer_of_Worlds.png"><img style="width:20px;max-height:24px" src="Achievement_Slayer_of_Worlds.png" alt="Achievement_Slayer_of_Worlds.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Slayer-of-Worlds-12a8f238621980358ee4d80fb5889cef?pvs=21">Slayer of Worlds </a></td><td class="cell-dTFC">Đánh bại mọi trùm trong trò chơi</td></tr><tr id="12a8f238-6219-8041-8083-d67d0b04cc48"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_You_Can_Do_It!.png"><img style="width:20px;max-height:24px" src="Achievement_You_Can_Do_It!.png" alt="Achievement_You_Can_Do_It!.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/You-Can-Do-It-12a8f238621980418083d67d0b04cc48?pvs=21">You Can Do It!</a></td><td class="cell-dTFC">Sống sót qua đêm đầu tiên trọn vẹn của bạn</td></tr><tr id="12a8f238-6219-80bd-aaec-f3b2efca233a"><td class="cell-}nlm"><span style="margin-right:6px"><a href="Achievement_Matching_Attire.png"><img style="width:20px;max-height:24px" src="Achievement_Matching_Attire.png" alt="Achievement_Matching_Attire.png"/></a></span></td><td class="cell-title"><a href="https://www.notion.so/Matching-Attire-12a8f238621980bdaaecf3b2efca233a?pvs=21">Matching Attire</a></td><td class="cell-dTFC">Trang bị các mảnh giáp vào tất cả các ô giáp (các mảnh giáp không cần phải cùng một bộ).</td></tr></tbody></table><br/><br/></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
